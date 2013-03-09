@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D043004416EBDB6200340960 /* allocator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D072EE5E16E1BB280005D0AF /* allocator.cpp */; };
+		D043004516EBDB6200340960 /* assert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D072EE5F16E1BB280005D0AF /* assert.cpp */; };
+		D043004616EBDB6200340960 /* fixed_pool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D072EE6016E1BB280005D0AF /* fixed_pool.cpp */; };
+		D043004716EBDB6200340960 /* hashtable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D072EE6116E1BB280005D0AF /* hashtable.cpp */; };
+		D043004816EBDB6200340960 /* red_black_tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D072EE6216E1BB280005D0AF /* red_black_tree.cpp */; };
+		D043004916EBDB6200340960 /* string.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D072EE6316E1BB280005D0AF /* string.cpp */; };
+		D043004A16EBDB7800340960 /* EASTL.h in Headers */ = {isa = PBXBuildFile; fileRef = D08C7E2E16EA99120053E9AF /* EASTL.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D072EE6416E1BB280005D0AF /* allocator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D072EE5E16E1BB280005D0AF /* allocator.cpp */; };
 		D072EE6516E1BB280005D0AF /* assert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D072EE5F16E1BB280005D0AF /* assert.cpp */; };
 		D072EE6616E1BB280005D0AF /* fixed_pool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D072EE6016E1BB280005D0AF /* fixed_pool.cpp */; };
@@ -17,7 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D072EE4616E1BABC0005D0AF /* EASTL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EASTL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D043003016EBD78800340960 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		D043004016EBDABE00340960 /* libEASTL.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libEASTL.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D072EE4616E1BABC0005D0AF /* EASTL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EASTL.framework; path = ../OSX/Release/EASTL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D072EE5116E1BABC0005D0AF /* EASTL-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "EASTL-Info.plist"; path = "../EASTL-Info.plist"; sourceTree = "<group>"; };
 		D072EE5E16E1BB280005D0AF /* allocator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = allocator.cpp; path = src/allocator.cpp; sourceTree = "<group>"; };
 		D072EE5F16E1BB280005D0AF /* assert.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = assert.cpp; path = src/assert.cpp; sourceTree = "<group>"; };
@@ -70,6 +79,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D043003D16EBDABE00340960 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D072EE4216E1BABC0005D0AF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -80,12 +96,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D043002F16EBD78800340960 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D043003016EBD78800340960 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D072EE3C16E1BABC0005D0AF = {
 			isa = PBXGroup;
 			children = (
 				D0C8458416EAF0A900E34152 /* ReadMe.md */,
 				D08C7E2E16EA99120053E9AF /* EASTL.h */,
 				D072EE4F16E1BABC0005D0AF /* EASTL */,
+				D043002F16EBD78800340960 /* Frameworks */,
 				D072EE4716E1BABC0005D0AF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				D072EE4616E1BABC0005D0AF /* EASTL.framework */,
+				D043004016EBDABE00340960 /* libEASTL.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -181,6 +207,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		D043003E16EBDABE00340960 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D043004A16EBDB7800340960 /* EASTL.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D072EE4316E1BABC0005D0AF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -192,21 +226,39 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		D072EE4516E1BABC0005D0AF /* EASTL */ = {
+		D043003F16EBDABE00340960 /* libEASTL-OSX */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D072EE5B16E1BABC0005D0AF /* Build configuration list for PBXNativeTarget "EASTL" */;
+			buildConfigurationList = D043004116EBDABE00340960 /* Build configuration list for PBXNativeTarget "libEASTL-OSX" */;
 			buildPhases = (
-				D072EE4116E1BABC0005D0AF /* Sources */,
-				D072EE4216E1BABC0005D0AF /* Frameworks */,
-				D072EE4316E1BABC0005D0AF /* Headers */,
-				D072EE4416E1BABC0005D0AF /* Resources */,
-				D08C7E4C16EA9A6D0053E9AF /* Copy Headers Script */,
+				D043003C16EBDABE00340960 /* Sources */,
+				D043003D16EBDABE00340960 /* Frameworks */,
+				D043003E16EBDABE00340960 /* Headers */,
+				D043004B16EBDE6F00340960 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = EASTL;
+			name = "libEASTL-OSX";
+			productName = libEASTL;
+			productReference = D043004016EBDABE00340960 /* libEASTL.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D072EE4516E1BABC0005D0AF /* EASTL-OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D072EE5B16E1BABC0005D0AF /* Build configuration list for PBXNativeTarget "EASTL-OSX" */;
+			buildPhases = (
+				D072EE4116E1BABC0005D0AF /* Sources */,
+				D072EE4216E1BABC0005D0AF /* Frameworks */,
+				D072EE4316E1BABC0005D0AF /* Headers */,
+				D072EE4416E1BABC0005D0AF /* Resources */,
+				D08C7E4C16EA9A6D0053E9AF /* Run Script */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EASTL-OSX";
 			productName = EASTL;
 			productReference = D072EE4616E1BABC0005D0AF /* EASTL.framework */;
 			productType = "com.apple.product-type.framework";
@@ -232,7 +284,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D072EE4516E1BABC0005D0AF /* EASTL */,
+				D072EE4516E1BABC0005D0AF /* EASTL-OSX */,
+				D043003F16EBDABE00340960 /* libEASTL-OSX */,
 			);
 		};
 /* End PBXProject section */
@@ -248,14 +301,27 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		D08C7E4C16EA9A6D0053E9AF /* Copy Headers Script */ = {
+		D043004B16EBDE6F00340960 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Headers Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "cp -R \"${PROJECT_DIR}/EASTL/include/EASTL/\" \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}\"\ncp -R \"${PROJECT_DIR}/EASTL/include/EABase/\" \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/EABase\"\nchown -R ${INSTALL_OWNER}:${INSTALL_GROUP} \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}\"\nchmod -RH ${INSTALL_MODE_FLAG}  \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}\"";
+		};
+		D08C7E4C16EA9A6D0053E9AF /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +331,19 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D043003C16EBDABE00340960 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D043004416EBDB6200340960 /* allocator.cpp in Sources */,
+				D043004516EBDB6200340960 /* assert.cpp in Sources */,
+				D043004616EBDB6200340960 /* fixed_pool.cpp in Sources */,
+				D043004716EBDB6200340960 /* hashtable.cpp in Sources */,
+				D043004816EBDB6200340960 /* red_black_tree.cpp in Sources */,
+				D043004916EBDB6200340960 /* string.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D072EE4116E1BABC0005D0AF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -281,6 +360,28 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		D043004216EBDABE00340960 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRIVATE_HEADERS_FOLDER_PATH = include/$PRODUCT_NAME;
+				PRODUCT_NAME = EASTL;
+				PUBLIC_HEADERS_FOLDER_PATH = include/$PRODUCT_NAME;
+				SYMROOT = build/OSX;
+			};
+			name = Debug;
+		};
+		D043004316EBDABE00340960 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRIVATE_HEADERS_FOLDER_PATH = include/$PRODUCT_NAME;
+				PRODUCT_NAME = EASTL;
+				PUBLIC_HEADERS_FOLDER_PATH = include/$PRODUCT_NAME;
+				SYMROOT = build/OSX;
+			};
+			name = Release;
+		};
 		D072EE5916E1BABC0005D0AF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -299,14 +400,16 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
+					"EASTL_DEBUG=1",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/EASTL/include\"";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -329,7 +432,9 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/EASTL/include\"";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -341,15 +446,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"EASTL_DEBUG=1",
-					"$(inherited)",
-				);
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/EASTL/include\"";
 				INFOPLIST_FILE = "EASTL-Info.plist";
 				INSTALL_PATH = "@rpath";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = EASTL;
+				SYMROOT = build/OSX;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Debug;
@@ -361,11 +462,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/EASTL/include\"";
 				INFOPLIST_FILE = "EASTL-Info.plist";
 				INSTALL_PATH = "@rpath";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = EASTL;
+				SYMROOT = build/OSX;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Release;
@@ -373,6 +474,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D043004116EBDABE00340960 /* Build configuration list for PBXNativeTarget "libEASTL-OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D043004216EBDABE00340960 /* Debug */,
+				D043004316EBDABE00340960 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		D072EE4016E1BABC0005D0AF /* Build configuration list for PBXProject "EASTL" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -382,7 +491,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D072EE5B16E1BABC0005D0AF /* Build configuration list for PBXNativeTarget "EASTL" */ = {
+		D072EE5B16E1BABC0005D0AF /* Build configuration list for PBXNativeTarget "EASTL-OSX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D072EE5C16E1BABC0005D0AF /* Debug */,
