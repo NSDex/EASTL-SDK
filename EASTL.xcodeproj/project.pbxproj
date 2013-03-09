@@ -66,6 +66,7 @@
 		D08C7E0216EA950F0053E9AF /* vector_map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vector_map.h; path = include/EASTL/vector_map.h; sourceTree = "<group>"; };
 		D08C7E0316EA950F0053E9AF /* vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vector.h; path = include/EASTL/vector.h; sourceTree = "<group>"; };
 		D08C7E2E16EA99120053E9AF /* EASTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EASTL.h; sourceTree = "<group>"; };
+		D0C8458416EAF0A900E34152 /* ReadMe.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +83,7 @@
 		D072EE3C16E1BABC0005D0AF = {
 			isa = PBXGroup;
 			children = (
+				D0C8458416EAF0A900E34152 /* ReadMe.md */,
 				D08C7E2E16EA99120053E9AF /* EASTL.h */,
 				D072EE4F16E1BABC0005D0AF /* EASTL */,
 				D072EE4716E1BABC0005D0AF /* Products */,

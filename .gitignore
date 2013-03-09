@@ -13,3 +13,9 @@ Thumbs.db
 ###################
 *.xcworkspace
 *.xcuserdatad
+
+# Build files#
+###################
+*.build
+*.framework
+*.dsym
