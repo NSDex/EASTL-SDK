@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D072EE6416E1BB280005D0AF /* allocator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D072EE5E16E1BB280005D0AF /* allocator.cpp */; };
+		D072EE6516E1BB280005D0AF /* assert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D072EE5F16E1BB280005D0AF /* assert.cpp */; };
+		D072EE6616E1BB280005D0AF /* fixed_pool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D072EE6016E1BB280005D0AF /* fixed_pool.cpp */; };
+		D072EE6716E1BB280005D0AF /* hashtable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D072EE6116E1BB280005D0AF /* hashtable.cpp */; };
+		D072EE6816E1BB280005D0AF /* red_black_tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D072EE6216E1BB280005D0AF /* red_black_tree.cpp */; };
+		D08C7E2C16EA97B50053E9AF /* string.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D072EE6316E1BB280005D0AF /* string.cpp */; };
+		D08C7E2F16EA99120053E9AF /* EASTL.h in Headers */ = {isa = PBXBuildFile; fileRef = D08C7E2E16EA99120053E9AF /* EASTL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D072EE4616E1BABC0005D0AF /* EASTL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EASTL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D072EE5116E1BABC0005D0AF /* EASTL-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "EASTL-Info.plist"; path = "../EASTL-Info.plist"; sourceTree = "<group>"; };
+		D072EE5E16E1BB280005D0AF /* allocator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = allocator.cpp; path = src/allocator.cpp; sourceTree = "<group>"; };
+		D072EE5F16E1BB280005D0AF /* assert.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = assert.cpp; path = src/assert.cpp; sourceTree = "<group>"; };
+		D072EE6016E1BB280005D0AF /* fixed_pool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = fixed_pool.cpp; path = src/fixed_pool.cpp; sourceTree = "<group>"; };
+		D072EE6116E1BB280005D0AF /* hashtable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = hashtable.cpp; path = src/hashtable.cpp; sourceTree = "<group>"; };
+		D072EE6216E1BB280005D0AF /* red_black_tree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = red_black_tree.cpp; path = src/red_black_tree.cpp; sourceTree = "<group>"; };
+		D072EE6316E1BB280005D0AF /* string.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = string.cpp; path = src/string.cpp; sourceTree = "<group>"; };
+		D08C7DDA16EA950F0053E9AF /* algorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = algorithm.h; path = include/EASTL/algorithm.h; sourceTree = "<group>"; };
+		D08C7DDB16EA950F0053E9AF /* allocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = allocator.h; path = include/EASTL/allocator.h; sourceTree = "<group>"; };
+		D08C7DDC16EA950F0053E9AF /* bitset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bitset.h; path = include/EASTL/bitset.h; sourceTree = "<group>"; };
+		D08C7DDE16EA950F0053E9AF /* sort_extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sort_extra.h; sourceTree = "<group>"; };
+		D08C7DDF16EA950F0053E9AF /* core_allocator_adapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = core_allocator_adapter.h; path = include/EASTL/core_allocator_adapter.h; sourceTree = "<group>"; };
+		D08C7DE016EA950F0053E9AF /* fixed_allocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fixed_allocator.h; path = include/EASTL/fixed_allocator.h; sourceTree = "<group>"; };
+		D08C7DE116EA950F0053E9AF /* fixed_hash_map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fixed_hash_map.h; path = include/EASTL/fixed_hash_map.h; sourceTree = "<group>"; };
+		D08C7DE216EA950F0053E9AF /* fixed_hash_set.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fixed_hash_set.h; path = include/EASTL/fixed_hash_set.h; sourceTree = "<group>"; };
+		D08C7DE316EA950F0053E9AF /* fixed_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fixed_list.h; path = include/EASTL/fixed_list.h; sourceTree = "<group>"; };
+		D08C7DE416EA950F0053E9AF /* fixed_map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fixed_map.h; path = include/EASTL/fixed_map.h; sourceTree = "<group>"; };
+		D08C7DE516EA950F0053E9AF /* fixed_set.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fixed_set.h; path = include/EASTL/fixed_set.h; sourceTree = "<group>"; };
+		D08C7DE616EA950F0053E9AF /* fixed_string.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fixed_string.h; path = include/EASTL/fixed_string.h; sourceTree = "<group>"; };
+		D08C7DE716EA950F0053E9AF /* fixed_substring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fixed_substring.h; path = include/EASTL/fixed_substring.h; sourceTree = "<group>"; };
+		D08C7DE816EA950F0053E9AF /* fixed_vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fixed_vector.h; path = include/EASTL/fixed_vector.h; sourceTree = "<group>"; };
+		D08C7DE916EA950F0053E9AF /* functional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = functional.h; path = include/EASTL/functional.h; sourceTree = "<group>"; };
+		D08C7DEA16EA950F0053E9AF /* hash_map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hash_map.h; path = include/EASTL/hash_map.h; sourceTree = "<group>"; };
+		D08C7DEB16EA950F0053E9AF /* hash_set.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hash_set.h; path = include/EASTL/hash_set.h; sourceTree = "<group>"; };
+		D08C7DEC16EA950F0053E9AF /* heap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = heap.h; path = include/EASTL/heap.h; sourceTree = "<group>"; };
+		D08C7DEE16EA950F0053E9AF /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		D08C7DEF16EA950F0053E9AF /* eastl_rw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eastl_rw.h; sourceTree = "<group>"; };
+		D08C7DF016EA950F0053E9AF /* fixed_pool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fixed_pool.h; sourceTree = "<group>"; };
+		D08C7DF116EA950F0053E9AF /* generic_iterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = generic_iterator.h; sourceTree = "<group>"; };
+		D08C7DF216EA950F0053E9AF /* hashtable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hashtable.h; sourceTree = "<group>"; };
+		D08C7DF316EA950F0053E9AF /* red_black_tree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = red_black_tree.h; sourceTree = "<group>"; };
+		D08C7DF416EA950F0053E9AF /* type_compound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = type_compound.h; sourceTree = "<group>"; };
+		D08C7DF516EA950F0053E9AF /* type_fundamental.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = type_fundamental.h; sourceTree = "<group>"; };
+		D08C7DF616EA950F0053E9AF /* type_pod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = type_pod.h; sourceTree = "<group>"; };
+		D08C7DF716EA950F0053E9AF /* type_properties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = type_properties.h; sourceTree = "<group>"; };
+		D08C7DF816EA950F0053E9AF /* type_transformations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = type_transformations.h; sourceTree = "<group>"; };
+		D08C7DF916EA950F0053E9AF /* iterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iterator.h; path = include/EASTL/iterator.h; sourceTree = "<group>"; };
+		D08C7DFA16EA950F0053E9AF /* list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = list.h; path = include/EASTL/list.h; sourceTree = "<group>"; };
+		D08C7DFB16EA950F0053E9AF /* map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = map.h; path = include/EASTL/map.h; sourceTree = "<group>"; };
+		D08C7DFC16EA950F0053E9AF /* memory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = memory.h; path = include/EASTL/memory.h; sourceTree = "<group>"; };
+		D08C7DFD16EA950F0053E9AF /* set.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = set.h; path = include/EASTL/set.h; sourceTree = "<group>"; };
+		D08C7DFE16EA950F0053E9AF /* sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sort.h; path = include/EASTL/sort.h; sourceTree = "<group>"; };
+		D08C7DFF16EA950F0053E9AF /* string.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = string.h; path = include/EASTL/string.h; sourceTree = "<group>"; };
+		D08C7E0016EA950F0053E9AF /* type_traits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = type_traits.h; path = include/EASTL/type_traits.h; sourceTree = "<group>"; };
+		D08C7E0116EA950F0053E9AF /* utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = utility.h; path = include/EASTL/utility.h; sourceTree = "<group>"; };
+		D08C7E0216EA950F0053E9AF /* vector_map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vector_map.h; path = include/EASTL/vector_map.h; sourceTree = "<group>"; };
+		D08C7E0316EA950F0053E9AF /* vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vector.h; path = include/EASTL/vector.h; sourceTree = "<group>"; };
+		D08C7E2E16EA99120053E9AF /* EASTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EASTL.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D072EE4216E1BABC0005D0AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D072EE3C16E1BABC0005D0AF = {
+			isa = PBXGroup;
+			children = (
+				D08C7E2E16EA99120053E9AF /* EASTL.h */,
+				D072EE4F16E1BABC0005D0AF /* EASTL */,
+				D072EE4716E1BABC0005D0AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D072EE4716E1BABC0005D0AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D072EE4616E1BABC0005D0AF /* EASTL.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D072EE4F16E1BABC0005D0AF /* EASTL */ = {
+			isa = PBXGroup;
+			children = (
+				D08C7DDA16EA950F0053E9AF /* algorithm.h */,
+				D08C7DDB16EA950F0053E9AF /* allocator.h */,
+				D08C7DDC16EA950F0053E9AF /* bitset.h */,
+				D08C7DDD16EA950F0053E9AF /* bonus */,
+				D08C7DDF16EA950F0053E9AF /* core_allocator_adapter.h */,
+				D08C7DE016EA950F0053E9AF /* fixed_allocator.h */,
+				D08C7DE116EA950F0053E9AF /* fixed_hash_map.h */,
+				D08C7DE216EA950F0053E9AF /* fixed_hash_set.h */,
+				D08C7DE316EA950F0053E9AF /* fixed_list.h */,
+				D08C7DE416EA950F0053E9AF /* fixed_map.h */,
+				D08C7DE516EA950F0053E9AF /* fixed_set.h */,
+				D08C7DE616EA950F0053E9AF /* fixed_string.h */,
+				D08C7DE716EA950F0053E9AF /* fixed_substring.h */,
+				D08C7DE816EA950F0053E9AF /* fixed_vector.h */,
+				D08C7DE916EA950F0053E9AF /* functional.h */,
+				D08C7DEA16EA950F0053E9AF /* hash_map.h */,
+				D08C7DEB16EA950F0053E9AF /* hash_set.h */,
+				D08C7DEC16EA950F0053E9AF /* heap.h */,
+				D08C7DED16EA950F0053E9AF /* internal */,
+				D08C7DF916EA950F0053E9AF /* iterator.h */,
+				D08C7DFA16EA950F0053E9AF /* list.h */,
+				D08C7DFB16EA950F0053E9AF /* map.h */,
+				D08C7DFC16EA950F0053E9AF /* memory.h */,
+				D08C7DFD16EA950F0053E9AF /* set.h */,
+				D08C7DFE16EA950F0053E9AF /* sort.h */,
+				D08C7DFF16EA950F0053E9AF /* string.h */,
+				D08C7E0016EA950F0053E9AF /* type_traits.h */,
+				D08C7E0116EA950F0053E9AF /* utility.h */,
+				D08C7E0216EA950F0053E9AF /* vector_map.h */,
+				D08C7E0316EA950F0053E9AF /* vector.h */,
+				D072EE5E16E1BB280005D0AF /* allocator.cpp */,
+				D072EE5F16E1BB280005D0AF /* assert.cpp */,
+				D072EE6016E1BB280005D0AF /* fixed_pool.cpp */,
+				D072EE6116E1BB280005D0AF /* hashtable.cpp */,
+				D072EE6216E1BB280005D0AF /* red_black_tree.cpp */,
+				D072EE6316E1BB280005D0AF /* string.cpp */,
+				D072EE5016E1BABC0005D0AF /* Supporting Files */,
+			);
+			path = EASTL;
+			sourceTree = "<group>";
+		};
+		D072EE5016E1BABC0005D0AF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D072EE5116E1BABC0005D0AF /* EASTL-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D08C7DDD16EA950F0053E9AF /* bonus */ = {
+			isa = PBXGroup;
+			children = (
+				D08C7DDE16EA950F0053E9AF /* sort_extra.h */,
+			);
+			name = bonus;
+			path = include/EASTL/bonus;
+			sourceTree = "<group>";
+		};
+		D08C7DED16EA950F0053E9AF /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				D08C7DEE16EA950F0053E9AF /* config.h */,
+				D08C7DEF16EA950F0053E9AF /* eastl_rw.h */,
+				D08C7DF016EA950F0053E9AF /* fixed_pool.h */,
+				D08C7DF116EA950F0053E9AF /* generic_iterator.h */,
+				D08C7DF216EA950F0053E9AF /* hashtable.h */,
+				D08C7DF316EA950F0053E9AF /* red_black_tree.h */,
+				D08C7DF416EA950F0053E9AF /* type_compound.h */,
+				D08C7DF516EA950F0053E9AF /* type_fundamental.h */,
+				D08C7DF616EA950F0053E9AF /* type_pod.h */,
+				D08C7DF716EA950F0053E9AF /* type_properties.h */,
+				D08C7DF816EA950F0053E9AF /* type_transformations.h */,
+			);
+			name = internal;
+			path = include/EASTL/internal;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D072EE4316E1BABC0005D0AF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D08C7E2F16EA99120053E9AF /* EASTL.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D072EE4516E1BABC0005D0AF /* EASTL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D072EE5B16E1BABC0005D0AF /* Build configuration list for PBXNativeTarget "EASTL" */;
+			buildPhases = (
+				D072EE4116E1BABC0005D0AF /* Sources */,
+				D072EE4216E1BABC0005D0AF /* Frameworks */,
+				D072EE4316E1BABC0005D0AF /* Headers */,
+				D072EE4416E1BABC0005D0AF /* Resources */,
+				D08C7E4C16EA9A6D0053E9AF /* Copy Headers Script */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EASTL;
+			productName = EASTL;
+			productReference = D072EE4616E1BABC0005D0AF /* EASTL.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D072EE3D16E1BABC0005D0AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = paulhodge;
+			};
+			buildConfigurationList = D072EE4016E1BABC0005D0AF /* Build configuration list for PBXProject "EASTL" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D072EE3C16E1BABC0005D0AF;
+			productRefGroup = D072EE4716E1BABC0005D0AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D072EE4516E1BABC0005D0AF /* EASTL */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D072EE4416E1BABC0005D0AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D08C7E4C16EA9A6D0053E9AF /* Copy Headers Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Headers Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "cp -R \"${PROJECT_DIR}/EASTL/include/EASTL/\" \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}\"\ncp -R \"${PROJECT_DIR}/EASTL/include/EABase/\" \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/EABase\"\nchown -R ${INSTALL_OWNER}:${INSTALL_GROUP} \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}\"\nchmod -RH ${INSTALL_MODE_FLAG}  \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D072EE4116E1BABC0005D0AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D072EE6416E1BB280005D0AF /* allocator.cpp in Sources */,
+				D072EE6516E1BB280005D0AF /* assert.cpp in Sources */,
+				D072EE6616E1BB280005D0AF /* fixed_pool.cpp in Sources */,
+				D072EE6716E1BB280005D0AF /* hashtable.cpp in Sources */,
+				D072EE6816E1BB280005D0AF /* red_black_tree.cpp in Sources */,
+				D08C7E2C16EA97B50053E9AF /* string.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D072EE5916E1BABC0005D0AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D072EE5A16E1BABC0005D0AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D072EE5C16E1BABC0005D0AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"EASTL_DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/EASTL/include\"";
+				INFOPLIST_FILE = "EASTL-Info.plist";
+				INSTALL_PATH = "@rpath";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYMROOT = ./bin;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		D072EE5D16E1BABC0005D0AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/EASTL/include\"";
+				INFOPLIST_FILE = "EASTL-Info.plist";
+				INSTALL_PATH = "@rpath";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYMROOT = ./bin;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D072EE4016E1BABC0005D0AF /* Build configuration list for PBXProject "EASTL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D072EE5916E1BABC0005D0AF /* Debug */,
+				D072EE5A16E1BABC0005D0AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D072EE5B16E1BABC0005D0AF /* Build configuration list for PBXNativeTarget "EASTL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D072EE5C16E1BABC0005D0AF /* Debug */,
+				D072EE5D16E1BABC0005D0AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D072EE3D16E1BABC0005D0AF /* Project object */;
+}
