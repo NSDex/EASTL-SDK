@@ -30,9 +30,9 @@
 // include the headers here using a path that will be vaid for framework
 // clients.
 ///////////////////////////////////////////////////////////////////////////////
+#include <EASTL/EABase/config/eaplatform.h>
 #include <EASTL/EABase/config/eacompiler.h>
 #include <EASTL/EABase/config/eacompilertraits.h>
-#include <EASTL/EABase/config/eaplatform.h>
 #include <EASTL/EABase/eabase.h>
 #include <EASTL/EABase/earesult.h>
 #define EASTL_EABASE_DISABLED 1
