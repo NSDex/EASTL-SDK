@@ -26,7 +26,7 @@
 /* Begin PBXFileReference section */
 		D043003016EBD78800340960 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		D043004016EBDABE00340960 /* libEASTL.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libEASTL.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		D072EE4616E1BABC0005D0AF /* EASTL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EASTL.framework; path = ../OSX/Release/EASTL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D072EE4616E1BABC0005D0AF /* EASTL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EASTL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D072EE5116E1BABC0005D0AF /* EASTL-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "EASTL-Info.plist"; path = "../EASTL-Info.plist"; sourceTree = "<group>"; };
 		D072EE5E16E1BB280005D0AF /* allocator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = allocator.cpp; path = src/allocator.cpp; sourceTree = "<group>"; };
 		D072EE5F16E1BB280005D0AF /* assert.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = assert.cpp; path = src/assert.cpp; sourceTree = "<group>"; };
@@ -367,7 +367,6 @@
 				PRIVATE_HEADERS_FOLDER_PATH = include/$PRODUCT_NAME;
 				PRODUCT_NAME = EASTL;
 				PUBLIC_HEADERS_FOLDER_PATH = include/$PRODUCT_NAME;
-				SYMROOT = build/OSX;
 			};
 			name = Debug;
 		};
@@ -378,7 +377,6 @@
 				PRIVATE_HEADERS_FOLDER_PATH = include/$PRODUCT_NAME;
 				PRODUCT_NAME = EASTL;
 				PUBLIC_HEADERS_FOLDER_PATH = include/$PRODUCT_NAME;
-				SYMROOT = build/OSX;
 			};
 			name = Release;
 		};
@@ -411,6 +409,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
+				SYMROOT = "$(SRCROOT)/build/$(PLATFORM_NAME)";
 			};
 			name = Debug;
 		};
@@ -436,6 +435,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
+				SYMROOT = "$(SRCROOT)/build/$(PLATFORM_NAME)";
 			};
 			name = Release;
 		};
@@ -450,7 +450,6 @@
 				INSTALL_PATH = "@rpath";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				PRODUCT_NAME = EASTL;
-				SYMROOT = build/OSX;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Debug;
@@ -466,7 +465,6 @@
 				INSTALL_PATH = "@rpath";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				PRODUCT_NAME = EASTL;
-				SYMROOT = build/OSX;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Release;
@@ -481,6 +479,7 @@
 				D043004316EBDABE00340960 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D072EE4016E1BABC0005D0AF /* Build configuration list for PBXProject "EASTL" */ = {
 			isa = XCConfigurationList;
